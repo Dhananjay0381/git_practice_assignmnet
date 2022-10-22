@@ -1,8 +1,8 @@
 //for pildrome 
 let str = "naman";
-let str1=""
-for (let i=0;i<=str.length-1;i++){
- {
+let new_str=""
+for (let i=str.length-1;i>=0;i--){
+ 
          new_str = new_str + str[i]
     }
   if (str == new_str)
@@ -17,12 +17,14 @@ for (let i=0;i<=str.length-1;i++){
 
 //for prime numbers till the given number 
 let n=15
-let count = 0
-for (let i=0; i<=n;i++){
-if (n%i==0){
+for(let j=1;j<=n;j++){
+  let count = 0
+for (let i=1; i<=j;i++){
+if (j%i==0){
 count++
 }
-if (count!=2){
-console.log("is a prime number)}
-else {console.log("is not a prime number)}
+}
+if (count==2){
+console.log(j);    
+}
 }
